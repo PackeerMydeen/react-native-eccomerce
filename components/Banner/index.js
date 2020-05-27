@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import { View, Text, ImageBackground, Image } from 'react-native'
+import normalize from 'react-native-normalize';
 
 function Banner({ percent }) {
     return (
@@ -25,18 +26,18 @@ const styles = {
     backgroundImage: {
         flex: 1,
         resizeMode: "contain",
-        height: 400,
+        height: normalize(350, 'height'),
     },
     bannerHeading: {
         flex: 1,
         alignItems: 'center',
-        marginTop: 50,
+        marginTop: normalize(50),
 
     },
     newCollectionText: {
         color: '#040e35',
-        fontSize: 30,
-        width: 156,
+        fontSize: normalize(30),
+        width: normalize(156),
         fontFamily: 'Product-Sans-Regular',
         lineHeight: 27
     },
@@ -46,19 +47,19 @@ const styles = {
         flex: 1,
     },
     sweatShirt: {
-        marginBottom: 57,
-        marginLeft: 16
+        marginBottom: normalize(57),
+        marginLeft: normalize(16)
     },
     discount: {
         flex: 1,
         alignItems: 'flex-end',
-        marginBottom: 38,
-        marginRight: 42
+        marginBottom: normalize(38),
+        marginRight: normalize(42)
     },
     saveText: {
         color: '#ffffff',
         fontFamily: 'Product-Sans-Regular',
-        fontSize: 14
+        fontSize: normalize(14)
     },
     offerContainer: {
         flexDirection: 'row',
@@ -66,8 +67,8 @@ const styles = {
     },
     offerPercent: {
         color: '#ffffff',
-        fontSize: 24,
-        marginRight: 5,
+        fontSize: normalize(24),
+        marginRight: normalize(5),
         fontFamily: 'Product-Sans-Regular',
     }
 }

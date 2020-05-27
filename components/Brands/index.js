@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import { View, StyleSheet, FlatList, YellowBox } from 'react-native'
+import normalize from 'react-native-normalize';
 
 import * as utils from '../../utils'
 import Title from '../Title'
@@ -30,14 +31,14 @@ function Brands() {
 const styles = StyleSheet.create({
     brandWrapper: {
         flex: 1,
-        padding: 16
+        padding: normalize(16)
     },
     brandList: {
         flex: 1,
-        marginTop: 18
+        marginTop: normalize(18)
     },
     icons: {
-        marginRight: 80
+        marginRight: normalize(80)
     },
     list: {
         flexDirection: 'row',
