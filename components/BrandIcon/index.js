@@ -1,6 +1,8 @@
 import React, { memo } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 
+import * as utils from '../../utils'
+
 function BrandIcon(props) {
     const { title, detail } = props.products && props.products.item
     return (

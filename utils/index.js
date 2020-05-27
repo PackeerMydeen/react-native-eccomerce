@@ -38,4 +38,4 @@ export const products = [
 
 ];
 
-export const productIcons = [require(`../../assets/tommy_hilfiger.jpg`), require(`../../assets/nike.jpg`), require(`../../assets/american_eagle.jpg`), require(`../../assets/adidas.jpg`), require(`../../assets/puma.jpg`), require(`../../assets/zara.jpg`)]
+export const productIcons = [require(`../assets/tommy_hilfiger.jpg`), require(`../assets/nike.jpg`), require(`../assets/american_eagle.jpg`), require(`../assets/adidas.jpg`), require(`../assets/puma.jpg`), require(`../assets/zara.jpg`)]

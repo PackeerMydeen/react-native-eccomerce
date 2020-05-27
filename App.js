@@ -6,6 +6,7 @@ import { AppLoading } from 'expo'
 import Header from './components/Header'
 import Banner from './components/Banner';
 import Brands from './components/Brands';
+import GenderShop from './components/GenderShop';
 
 let customFonts = {
   'Product-Sans-Bold': require('./assets/fonts/Product-Sans-Bold.ttf'),
@@ -36,6 +37,7 @@ function App() {
         <Header title={'Sweatshirts Store'} />
         <Banner percent='45%' />
         <Brands />
+        <GenderShop />
       </ScrollView>
     </SafeAreaView>
 
