@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { View, StyleSheet, FlatList, YellowBox } from 'react-native'
 
 import * as utils from '../../utils'
 import Title from '../Title'
 import BrandIcon from '../BrandIcon'
 
-export default function Brands() {
+function Brands() {
     return (
         <View style={styles.brandWrapper}>
             <View style={{ marginTop: 20, }}>
@@ -48,3 +48,5 @@ const styles = StyleSheet.create({
 YellowBox.ignoreWarnings([
     'VirtualizedLists should never be nested', // TODO: Remove when fixed
 ])
+
+export default memo(Brands)

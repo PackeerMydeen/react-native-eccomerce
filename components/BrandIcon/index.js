@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 
-export default function BrandIcon(props) {
+function BrandIcon(props) {
     const { title, detail } = props.products && props.products.item
     return (
         <View style={styles.brandIconWrapper}>
@@ -57,3 +57,5 @@ const styles = StyleSheet.create({
         width: 79
     }
 })
+
+export default memo(BrandIcon)

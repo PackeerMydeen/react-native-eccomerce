@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { View, Text, ImageBackground, Image } from 'react-native'
 
-export default function Banner({ percent }) {
+function Banner({ percent }) {
     return (
         <ImageBackground source={require("../../assets/bg_6.png")} style={[styles.backgroundImage]}>
             <View style={styles.bannerHeading}><Text style={styles.newCollectionText}>New Collections</Text></View>
@@ -71,3 +71,5 @@ const styles = {
         fontFamily: 'Product-Sans-Regular',
     }
 }
+
+export default memo(Banner)
