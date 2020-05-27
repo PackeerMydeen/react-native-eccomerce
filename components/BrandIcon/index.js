@@ -1,16 +1,12 @@
 import React from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 
-const icons = [require(`../../assets/tommy_hilfiger.jpg`), require(`../../assets/nike.jpg`), require(`../../assets/american_eagle.jpg`), require(`../../assets/adidas.jpg`), require(`../../assets/puma.jpg`), require(`../../assets/zara.jpg`)]
-
 export default function BrandIcon(props) {
-    console.log(props.products)
-    const { title, detail } = props.products.item
-
+    const { title, detail } = props.products && props.products.item
     return (
         <View style={styles.brandIconWrapper}>
             <View style={styles.brandIconContainer}>
-                <Image source={icons[props.products.index]} style={styles.tinyLogo} />
+                <Image source={utils.productIcons[props.products.index]} style={styles.tinyLogo} />
             </View>
             <Text style={styles.brandName}>{title}</Text>
             <View style={styles.copyContainer}><Text style={styles.copyText}>{detail}</Text></View>

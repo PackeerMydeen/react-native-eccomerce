@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, ScrollView, Platform, SafeAreaView } from 'react-native';
+import React, { useState, useEffect, memo } from 'react';
+import { StyleSheet, ScrollView, Platform, SafeAreaView } from 'react-native';
 import * as Font from 'expo-font'
 import { AppLoading } from 'expo'
 
-import Headers from './components/Header'
+import Header from './components/Header'
 import Banner from './components/Banner';
 import Brands from './components/Brands';
 
@@ -15,7 +15,7 @@ let customFonts = {
 }
 
 
-export default function App() {
+function App() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
 
   const _loadFontsAsync = async () => {
@@ -24,7 +24,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    _loadFontsAsync(customFonts);
+    _loadFontsAsync(customFonts); //loading custom fonts
   }, [])
 
   if (!fontsLoaded) {
@@ -33,7 +33,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.appWrapper}>
-        <Headers />
+        <Header title={'Sweatshirts Store'} />
         <Banner percent='45%' />
         <Brands />
       </ScrollView>
@@ -53,3 +53,5 @@ const styles = StyleSheet.create({
   }
 
 });
+
+export default memo(App)
