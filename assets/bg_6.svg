@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="360px" height="360px" viewBox="0 0 360 360" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>39712AB9-BA58-4443-B4F5-DC707F83C317</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Store" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Sweatshirt-Store" transform="translate(0.000000, -80.000000)">
+            <g id="BG6" transform="translate(0.000000, 80.000000)">
+                <path d="M312,96 C312,74.4608948 294.539105,57 273,57" id="Path" stroke="#B7FCE5" stroke-width="18" transform="translate(292.500000, 76.500000) scale(-1, 1) translate(-292.500000, -76.500000) "></path>
+                <rect id="Rectangle" fill="#7AE0BE" x="0" y="264" width="360" height="96"></rect>
+                <rect id="Rectangle" fill="#7AE0BE" x="336" y="0" width="24" height="96"></rect>
+                <path d="M49,39 C70.5391052,39 88,21.5391052 88,0 C80.6666667,0 67.6666667,0 49,0 C34.3333333,0 21.3333333,0 10,0 C10,21.5391052 27.4608948,39 49,39 Z" id="Oval" fill="#7AE0BE"></path>
+                <circle id="Oval-Copy" fill="#7AE0BE" cx="309" cy="201" r="22"></circle>
+                <path d="M273,229 C288.463973,229 301,216.463973 301,201 C301,185.536027 288.463973,173 273,173 C273,191.666667 273,201 273,201 C273,211 273,220.333333 273,229 Z" id="Oval-Copy-2" fill="#B7FCE5"></path>
+            </g>
+        </g>
+    </g>
+</svg>
